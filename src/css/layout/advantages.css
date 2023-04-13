@@ -1,0 +1,109 @@
+.advantages {
+    background-color: var(--bcg-color-secondary);
+}
+
+.advantages-container {
+    padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+    .advantages-container {
+        padding: 50px 0px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .advantages-container {
+        padding: 50px 18px 50px 18px;
+    }
+}
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media screen and (min-width: 768px) {
+    .advantages-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages-list {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+}
+.advantages-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    min-height: 244px;
+}
+.advantages-item:last-child {
+    min-height: 225px;
+}
+@media screen and (min-width: 768px) {
+    .advantages-item:last-child {
+        min-height: 244px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .advantages-item:not(:last-child) {
+        width: 336px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .advantages-item:not(:last-child) {
+        width: 326px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .advantages-item:not(:last-child):after { 
+        position: absolute;    
+        right: 0;
+        top: 50%;   
+        content: '';        
+        width: 1px;
+        height: 124px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transform: translatey(-50%);
+    }
+}
+.advantages-item-content {
+    width: 308px;
+}
+
+.advantages-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+    margin-bottom: 22px;
+    margin-right: auto;
+}
+
+.advantages-icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--text-color-title);
+}
+
+.advantages-item-title {
+    color: var(--text-color-white);
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 18px;
+}
+
+.advantages-text {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    color: var(--text-color-advantages-descr);
+}

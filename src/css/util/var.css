@@ -1,0 +1,19 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --bcg-color-primary: #e2e2e2;
+  --bcg-color-secondary: #1e1823;
+  --bcg-color-white: #ffffff;
+  --bcg-color-modal: #fafafa;
+  --bcg-color-hover-orange-btn: #fcf1e0;
+  --text-color-black: #111111;
+  --text-color-white: #ffffff;
+  --text-color-review-descr: rgba(17, 17, 17, 0.7);
+  --text-color-title: #fd9222;
+  --text-color-advantages-descr: rgba(255, 255, 255, 0.7);
+  --text-color-placeholder: rgba(64, 64, 64, 0.3);
+  --bcg-hero-color: #1e1823;
+}

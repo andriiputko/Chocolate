@@ -1,0 +1,24 @@
+/* util styles */
+@import url('./util/var.css');
+@import url('./util/hidden.css');
+
+/* base styles */
+@import url('./base/common.css');
+@import url('./base/reset.css');
+@import url('./base/container.css');
+
+/* component styles */
+@import url('./component/title.css');
+@import url('./component/modal.css');
+
+/* layout styles */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/advantages.css');
+@import url('./layout/unique-components.css');
+@import url('./layout/how-its-made.css');
+@import url('./layout/our-products.css');
+@import url('./layout/top-sellers.css');
+@import url('./layout/reviews.css');
+@import url('./layout/subscribe.css');
+@import url('./layout/footer.css');

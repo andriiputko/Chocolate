@@ -1,0 +1,211 @@
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <h2 class="reviews-title title">
+      <span class="reviews-title-brand">Сhocolate</span> is loved
+    </h2>
+    <div class="reviews-swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide reviews-item">
+          <div class="reviews-image">
+            <img
+              srcset="
+                /img/desktop/reviews-victoria.jpg            1x,
+                /img/desktop-photos@2/reviews-victoria@2.jpg 2x
+              "
+              src="/img/desktop/reviews-victoria.jpg"
+              loading="lazy"
+              width="80"
+              alt="Victoria"
+            />
+          </div>
+          <h3 class="reviews-subtitle">Victoria Dobrzhanska</h3>
+          <p class="reviews-text">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </li>
+        <li class="swiper-slide reviews-item">
+          <div class="reviews-image">
+            <img
+              srcset="
+                /img/desktop/reviews-nazar.jpg            1x,
+                /img/desktop-photos@2/reviews-nazar@2.jpg 2x
+              "
+              src="../img/desktop/reviews-nazar.jpg"
+              loading="lazy"
+              width="80"
+              alt="Nazar"
+            />
+          </div>
+          <h3 class="reviews-subtitle">Nazar Babenko</h3>
+          <p class="reviews-text">
+            This chocolate confection is a delight! A delight! The wafer is
+            light and crisp, the hazelnut cream is smooth, and the chocolate is
+            good.
+          </p>
+        </li>
+        <li class="swiper-slide reviews-item">
+          <div class="reviews-image">
+            <img
+              srcset="
+                /img/desktop/reviews-olena.jpg            1x,
+                /img/desktop-photos@2/reviews-olena@2.jpg 2x
+              "
+              src="/img/desktop/reviews-olena.jpg"
+              loading="lazy"
+              width="80"
+              alt="Olena"
+            />
+          </div>
+          <h3 class="reviews-subtitle">Olena Kampusch</h3>
+          <p class="reviews-text">
+            Chocolate is a family favourite treat. Love the delicious smooth
+            chocolate and the creaminess inside. The wafer is soft but crunchy.
+          </p>
+        </li>
+        <li class="swiper-slide reviews-item">
+          <div class="reviews-image">
+            <img
+              srcset="
+                /img/desktop/reviews-natalia.jpg            1x,
+                /img/desktop-photos@2/reviews-natalia@2.jpg 2x
+              "
+              src="/img/desktop/reviews-natalia.jpg"
+              loading="lazy"
+              width="80"
+              alt="Natalia"
+            />
+          </div>
+          <h3 class="reviews-subtitle">Natalia Sus</h3>
+          <p class="reviews-text">
+            The chocolate assortment was delicious. Both dark and milk chocolate
+            pieces were smooth and just right on the sweetness level.
+          </p>
+        </li>
+        <li class="swiper-slide reviews-item">
+          <div class="reviews-image">
+            <img
+              srcset="
+                /img/desktop/reviews-danilo.jpg            1x,
+                /img/desktop-photos@2/reviews-danilo@2.jpg 2x
+              "
+              src="/img/desktop/reviews-danilo.jpg"
+              loading="lazy"
+              width="80"
+              alt="Danilo"
+            />
+          </div>
+          <h3 class="reviews-subtitle">Danilo Nottingham</h3>
+          <p class="reviews-text">
+            This is delicious. It so rich and flavorful you don’t need to use as
+            many. I love topping an apple with almond butter and these chips for
+            a snack.
+          </p>
+        </li>
+        <li class="swiper-slide reviews-item">
+          <div class="reviews-image">
+            <img
+              srcset="
+                /img/desktop/reviews-irina.jpg            1x,
+                /img/desktop-photos@2/reviews-irina@2.jpg 2x
+              "
+              src="/img/desktop/reviews-irina.jpg"
+              loading="lazy"
+              width="80"
+              alt="Irina"
+            />
+          </div>
+          <h3 class="reviews-subtitle">Irina Tydnyuk</h3>
+          <p class="reviews-text">
+            This is simply the best chocolate around, and I'm just thrilled to
+            support a local company! Best local chocolate - world class :)
+          </p>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button
+      class="reviews-button js-open-modal"
+      data-modal="reviews-modal"
+      type="button"
+    >
+      Leave a review
+    </button>
+  </div>
+
+  <div class="modal reviews-modal" data-modal="reviews-modal">
+    <button class="modal-close js-modal-close">
+      <svg class="modal-icon">
+        <use href="/img/icons.svg#x"></use>
+      </svg>
+    </button>
+    <form class="modal-second">
+      <h2 class="modal-title title">
+        <span class="review-line-break">Leave a review</span> about
+        <span class="reviews-title-brand">our chocolate</span>
+      </h2>
+      <div class="reviews-input-container">
+        <label class="visually-hidden" for="user-name">Name</label>
+        <input
+          class="reviews-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+          minlength="2"
+          required
+        />
+      </div>
+      <div class="reviews-input-container">
+        <label class="visually-hidden" for="user-email">Email</label>
+        <input
+          class="reviews-input"
+          type="email"
+          name="user-email"
+          id="user-email"
+          placeholder="Enter your email"
+          minlength="7"
+          required
+        />
+      </div>
+      <div class="reviews-input-container">
+        <label class="visually-hidden" for="user-phone">Phone number</label>
+        <input
+          class="reviews-input"
+          type="tel"
+          name="user-phone"
+          id="user-phone"
+          placeholder="Phone number"
+          pattern="^\+[0-9]{12}"
+          title='Номер повинен складатися із 12 цифр, а також починатись із
+        символа "+" та коду країни'
+          required
+        />
+      </div>
+      <div class="reviews-input-container">
+        <label class="visually-hidden" for="review-text">Enter text</label>
+        <textarea
+          class="reviews-input reviews-textarea"
+          name="review-text"
+          id="review-text"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="reviews-submit js-pop-up" type="submit">Send</button>
+    </form>
+  </div>
+  <div class="reviews-pop-up modal-pop-up modal success-second-modal">
+    <button class="modal-close pop-up-close js-modal-close">
+      <svg class="pop-up-icon">
+        <use href="/img/icons.svg#x"></use>
+      </svg>
+    </button>
+    <h2 class="title pop-up-title">
+      Thank you<br />
+      for your feedback!
+    </h2>
+    <p>
+      <span class="review-line-break">We are so happy to hear</span> from you!
+    </p>
+  </div>
+</section>
